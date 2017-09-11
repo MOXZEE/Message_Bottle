@@ -1,0 +1,49 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/content_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/messageRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".5">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <View
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight=".0">
+
+        <EditText
+            android:id="@+id/msgField"
+            android:hint="@string/message_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"/>
+
+        <Button
+            android:text="@string/sndButton"
+            android:id="@+id/sendButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".8"/>
+
+    </LinearLayout>
+
+</LinearLayout>
